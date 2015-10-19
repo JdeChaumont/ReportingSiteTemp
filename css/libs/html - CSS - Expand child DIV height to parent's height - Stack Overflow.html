@@ -1,0 +1,2732 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height -->
+<html itemscope="" itemtype="http://schema.org/QAPage"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>html - CSS - Expand child DIV height to parent's height - Stack Overflow</title>
+    <link rel="shortcut icon" href="http://cdn.sstatic.net/stackoverflow/img/favicon.ico?v=6cd6089ee7f6">
+    <link rel="apple-touch-icon image_src" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png?v=41f6e13ade69">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="http://stackoverflow.com/opensearch.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="stackoverflow.com">
+    <meta property="og:type" content="website">
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon@2.png?v=ea71a5211a91&amp;a">
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="CSS - Expand child DIV height to parent&#39;s height">
+    <meta name="twitter:description" property="og:description" itemprop="description" content="I have the page structure as:
+
+&amp;lt;div class=&quot;parent&quot;&amp;gt;
+    &amp;lt;div class=&quot;child-left floatLeft&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&quot;child-right floatLeft&quot;&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+...">
+    <meta property="og:url" content="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height">
+    <link rel="canonical" href="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/html - CSS - Expand child DIV height to parent's height - Stack Overflow.html">
+
+    
+    
+    <script async="" src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/quant.js"></script><script async="" src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/beacon.js"></script><script async="" src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/analytics.js"></script><script src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/jquery.min.js"></script>
+    <script src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/stub.en.js"></script>
+    <link rel="stylesheet" type="text/css" href="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/all.css">
+
+            <link rel="alternate" type="application/atom+xml" title="Feed for question &#39;CSS - Expand child DIV height to parent&#39;s height&#39;" href="http://stackoverflow.com/feeds/question/4804581">
+            <meta name="twitter:app:country" content="US">
+            <meta name="twitter:app:name:iphone" content="Stack Exchange iOS">
+            <meta name="twitter:app:id:iphone" content="871299723">
+            <meta name="twitter:app:url:iphone" content="se-zaphod://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height">
+            <meta name="twitter:app:name:ipad" content="Stack Exchange iOS">
+            <meta name="twitter:app:id:ipad" content="871299723">
+            <meta name="twitter:app:url:ipad" content="se-zaphod://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height">
+            <meta name="twitter:app:name:googleplay" content="Stack Exchange Android">
+            <meta name="twitter:app:url:googleplay" content="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height">
+            <meta name="twitter:app:id:googleplay" content="com.stackexchange.marvin">
+        <script>
+        
+            StackExchange.ready(function () {
+                    
+                    StackExchange.using("snippets", function () {
+                        StackExchange.snippets.initSnippetRenderer();
+                    });
+                    
+
+                StackExchange.using("postValidation", function () {
+                    StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+                });
+
+                
+                StackExchange.question.init({showAnswerHelp:true,totalCommentCount:3,shownCommentCount:3,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:4804581});
+
+                styleCode();
+
+                    StackExchange.realtime.subscribeToQuestion('1', '4804581');
+                                                                    StackExchange.using("gps", function () { StackExchange.gps.trackOutboundClicks('#content', '.post-text'); });
+
+            });
+        </script>
+
+
+    <script>
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","serverTime":1442053795,"networkMetaHostname":"meta.stackexchange.com","routeName":"Questions/Show","styleCode":true,"enableUserHovercards":true,"snippets":{"enabled":true,"domain":"stacksnippets.net"},"site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","recaptchaAudioLang":"en","enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"globalAuthDisabled":true,"nonAsciiTags":true,"enableSocialMediaInSharePopup":true},"user":{"fkey":"32b50a839e3bdfe48ea551d1eb4e39d8","isAnonymous":true,"ab":{"tour_signup_openId":{"v":"a","g":1},"topbar_next_achievement":{"v":"a","g":1},"anon_popups":{"v":"a","g":2}}}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"7af02038f0de","js/moderator.en.js":"a15707694e8d","js/full-anon.en.js":"bd40bb5238fe","js/full.en.js":"413ce009b373","js/wmd.en.js":"d9fc4c2f59a9","js/third-party/jquery.autocomplete.min.js":"e5f01e97f7c3","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"569a4184bf3c","js/help.en.js":"ce2977cf4348","js/tageditor.en.js":"b1a35e866f0c","js/tageditornew.en.js":"e9657e6dfd06","js/inline-tag-editing.en.js":"de80429b1816","js/revisions.en.js":"6aca57a6c709","js/review.en.js":"594f50350191","js/tagsuggestions.en.js":"d1ff9b84abe5","js/post-validation.en.js":"db3b6f0eaec0","js/explore-qlist.en.js":"cd6e5274146c","js/events.en.js":"c9a5580165bd","js/keyboard-shortcuts.en.js":"b6f0be0e6e35","js/external-editor.en.js":"d950ed54074b","js/external-editor.en.js":"d950ed54074b","js/snippet-javascript.en.js":"1098e25a1dd7","js/snippet-javascript-codemirror.en.js":"733254795386"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+        <script>
+            StackExchange.ready(function () {
+                $('#nav-tour').click(function () {
+                    StackExchange.using("gps", function() {
+                        StackExchange.gps.track("aboutpage.click", { aboutclick_location: "headermain" }, true);
+                    });
+                });
+            });
+        </script>
+    
+    
+<script async="" src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/p.js"></script><script async="" src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/full-anon.en.js"></script><script async="" src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/snippet-javascript.en.js"></script><script async="" src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/post-validation.en.js"></script><script async="" src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/prettify-full.en.js"></script><script async="" src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/external-editor.en.js"></script><link href="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/company.min.css" type="text/css" rel="stylesheet"><link href="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/sidebar.min.css" type="text/css" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/jobs.min.css"></head>
+<body class="question-page new-topbar">
+    <noscript>&lt;div id="noscript-padding"&gt;&lt;/div&gt;</noscript>
+    <div id="notify-container"></div>
+    <div id="overlay-header"></div>
+    <div id="custom-header"></div>
+
+
+
+
+<div class="topbar">
+    <div class="topbar-wrapper">
+
+        <div class="js-topbar-dialog-corral">
+
+<div class="topbar-dialog siteSwitcher-dialog dno">
+    <div class="header">
+        <h3><a href="http://stackoverflow.com/">current community</a></h3>
+    </div>
+    <div class="modal-content current-site-container">
+        <ul class="current-site">
+                <li>
+                        <div class="related-links">
+            <a href="http://chat.stackoverflow.com/" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:6 })">chat</a>
+                    <a href="http://blog.stackoverflow.com/" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:7 })">blog</a>
+            </div>
+
+
+
+
+    <a href="http://stackoverflow.com/" class="current-site-link site-link js-gps-track" data-id="1" data-gps-track="
+        site_switcher.click({ item_type:3 })">
+        <div class="site-icon favicon favicon-stackoverflow" title="Stack Overflow"></div>
+        Stack Overflow
+    </a>
+
+                </li>
+                <li class="related-site">
+                        <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                    
+
+
+
+    <a href="http://meta.stackoverflow.com/" class="site-link js-gps-track" data-id="552" data-gps-track="
+            site.switch({ target_site:552, item_type:3 }),
+        site_switcher.click({ item_type:4 })">
+        <div class="site-icon favicon favicon-stackoverflowmeta" title="Meta Stack Overflow"></div>
+        Meta Stack Overflow
+    </a>
+
+                </li>
+                            <li class="related-site">
+                        <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                    <a class="site-link js-gps-track" href="http://careers.stackoverflow.com/?utm_source=stackoverflow.com&utm_medium=site-ui&utm_campaign=multicollider" data-gps-track="site_switcher.click({ item_type:9 })">
+                        <div class="site-icon favicon favicon-careers" title="Stack Overflow Careers"></div>
+                        Stack Overflow Careers
+                    </a>
+                </li>
+        </ul>
+    </div>
+    
+    <div class="header" id="your-communities-header">
+        <h3>
+your communities        </h3>
+            
+    </div>
+    <div class="modal-content" id="your-communities-section">
+            
+            <div class="call-to-login">
+<a href="https://stackoverflow.com/users/signup?ssrc=site_switcher&returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f4804581%2fcss-expand-child-div-height-to-parents-height" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:10 })">Sign up</a> or <a href="https://stackoverflow.com/users/login?ssrc=site_switcher&returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f4804581%2fcss-expand-child-div-height-to-parents-height" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:11 })">log in</a> to customize your list.
+            </div>
+    </div>
+    
+    <div class="header">
+        <h3><a href="http://stackexchange.com/sites">more stack exchange communities</a></h3>
+    </div>
+    <div class="modal-content">
+            <div class="child-content"></div>
+    </div>
+</div>
+        </div>
+
+        <div class="network-items">
+
+            <a href="http://stackexchange.com/" class="topbar-icon icon-site-switcher yes-hover js-site-switcher-button js-gps-track" data-gps-track="site_switcher.show" title="A list of all 150 Stack Exchange sites">
+                <span class="hidden-text">Stack Exchange</span>
+            </a>
+
+        </div>
+
+        <div class="topbar-links">
+
+                <div class="links-container">
+                <span class="topbar-menu-links">
+                                    <a href="https://stackoverflow.com/users/signup?ssrc=head&returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f4804581%2fcss-expand-child-div-height-to-parents-height" class="login-link">sign up</a>
+                                <a href="https://stackoverflow.com/users/login?ssrc=head&returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f4804581%2fcss-expand-child-div-height-to-parents-height" class="login-link">log in</a>
+
+                        <a href="http://stackoverflow.com/tour">tour</a>
+                            <a href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#" class="icon-help js-help-button" title="Help Center and other resources">
+        help
+        <span class="triangle"></span>
+    </a>
+    <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                                    <li>
+                        <a href="http://stackoverflow.com/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
+                            Tour
+                            <span class="item-summary">
+                                Start here for a quick overview of the site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="http://stackoverflow.com/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                    <li>
+                        <a href="http://meta.stackoverflow.com/" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
+                            Meta
+                            <span class="item-summary">
+                                Discuss the workings and policies of this site
+                            </span>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+                            <a href="http://careers.stackoverflow.com/?utm_source=stackoverflow.com&utm_medium=site-ui&utm_campaign=anon-topbar">stack overflow careers</a>
+                    </span>
+                </div>
+
+            <div class="search-container">
+                <form id="search" action="http://stackoverflow.com/search" method="get" autocomplete="off">
+                    <input name="q" type="text" placeholder="search" value="" tabindex="1" autocomplete="off" maxlength="240">
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script>
+        StackExchange.ready(function() { StackExchange.topbar.init(); });
+    </script>
+
+    <div class="container">
+        <div id="header">
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="http://stackoverflow.com/">
+                    Stack Overflow
+                </a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs">
+                    <ul>
+                        <li class="youarehere"><a id="nav-questions" href="http://stackoverflow.com/questions">Questions</a></li>
+                        <li><a id="nav-tags" href="http://stackoverflow.com/tags">Tags</a></li>
+                        <li><a id="nav-users" href="http://stackoverflow.com/users">Users</a></li>
+                        <li><a id="nav-badges" href="http://stackoverflow.com/help/badges">Badges</a></li>
+                        <li><a id="nav-unanswered" href="http://stackoverflow.com/unanswered">Unanswered</a></li>
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion" href="http://stackoverflow.com/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+                <div id="system-message">Ten. Million. Questions. Let's celebrate <a href="http://stackoverflow.com/10m">all we've done together</a>.
+                </div>
+
+
+        <div id="content" class="snippet-hidden">
+            
+
+<div itemscope="" itemtype="http://schema.org/Question">
+    <link itemprop="image" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png?v=41f6e13ade69">
+			<!--googleoff: all-->
+
+<div id="herobox-mini">
+    <div id="hero-content">
+        <span id="controls">
+            <a href="http://stackoverflow.com/tour" id="tell-me-more" class="button">Take the 2-minute tour</a>
+            <span id="close"><a title="click to dismiss">×</a></span>
+        </span>
+        <div id="blurb">
+            Stack Overflow is a question and answer site for professional and enthusiast programmers. It's 100% free.
+        </div>        
+    </div>
+    <script>
+        $('#tell-me-more').click(function () {
+            var clickSource = $("body").attr("class") + '-mini';
+            if ($("body").hasClass("questions-page")) {
+                clickSource = 'questionpagemini';
+            } else if ($("body").hasClass("question-page")) {
+                clickSource = 'questionpagemini';
+            } else if ($("body").hasClass("home-page")) {
+                clickSource = 'homepagemini';
+            }
+
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("aboutpage.click", { aboutclick_location: clickSource } , true);
+            });
+        });
+        $('#herobox-mini #close').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: "close" }, true);
+            });
+            $.cookie("hero", "none", { path: "/", expires: 365 });
+            var $hero = $("#herobox-mini");
+            $hero.slideUp('fast', function () { $hero.remove(); });
+            return false;
+        });
+    </script>
+</div>
+			<!--googleon: all-->
+			<div id="question-header">
+                <h1 itemprop="name"><a href="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/html - CSS - Expand child DIV height to parent's height - Stack Overflow.html" class="question-hyperlink">CSS - Expand child DIV height to parent's height</a></h1>
+		</div>
+			<div id="mainbar">
+
+			
+
+<div class="question" data-questionid="4804581" id="question">
+
+    <div class="everyonelovesstackoverflow" id="careers1"><a href="http://careers.stackoverflow.com/" rel="nofollow" target="_blank"><img src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/companypageadfallback-leaderboard-3.png"></a></div>    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="4804581">
+        <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">179</span>
+        <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+
+        <a class="star-off" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#" title="This is a favorite question (click again to undo)">favorite</a>
+        <div class="favoritecount"><b>66</b></div>
+
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="text">
+
+<p>I have the page structure as:</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"parent"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"child-left floatLeft"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"child-right floatLeft"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span></code></pre>
+
+<p>Now, the <code>child-left</code> DIV will have more content, so the <code>parent</code> DIV's height increases as per the child DIV. </p>
+
+<p>But the problem is <code>child-right</code> height is not increasing. How can I make its height as equal to it's parent?</p>
+    </div>
+    <div class="post-taglist">
+        <a href="http://stackoverflow.com/questions/tagged/html" class="post-tag js-gps-track" title="show questions tagged &#39;html&#39;" rel="tag">html</a> <a href="http://stackoverflow.com/questions/tagged/css" class="post-tag js-gps-track" title="show questions tagged &#39;css&#39;" rel="tag">css</a> <a href="http://stackoverflow.com/questions/tagged/layout" class="post-tag js-gps-track" title="show questions tagged &#39;layout&#39;" rel="tag">layout</a> 
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/q/4804581" title="short permalink to this question" class="short-link" id="link-post-4804581">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/4804581/edit" class="suggest-edit-post" title="">improve this question</a></div>        
+    </td>
+    <td class="post-signature owner">
+        <div class="user-info user-hover">
+    <div class="user-action-time">
+        asked <span title="2011-01-26 12:32:22Z" class="relativetime">Jan 26 '11 at 12:32</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/42372/veera"><div class="gravatar-wrapper-32"><img src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/e9550bd5fab2b2a8ad0af487ff1fddb5" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/42372/veera">Veera</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">7,266</span><span title="23 gold badges"><span class="badge1"></span><span class="badgecount">23</span></span><span title="62 silver badges"><span class="badge2"></span><span class="badgecount">62</span></span><span title="106 bronze badges"><span class="badge3"></span><span class="badgecount">106</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+</td>
+        </tr>
+                
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-4804581" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-18449817" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">just FYI you wrote both div with floatLeft, the second should be floatRight</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/496223/dynamic" title="22032 reputation" class="comment-user">dynamic</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment18449817_4804581"><span title="2012-11-20 23:23:12Z" class="relativetime-clean">Nov 20 '12 at 23:23</span></a></span>
+                    <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-19122253" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="supernova">43</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@llnk: um, no it shouldn't.</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/402412/mike" title="455 reputation" class="comment-user">Mike</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment19122253_4804581"><span title="2012-12-14 16:29:45Z" class="relativetime-clean">Dec 14 '12 at 16:29</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-31703028" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">depending on context either is okay</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/11190/steve-obbayi" title="1734 reputation" class="comment-user">Steve Obbayi</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment31703028_4804581"><span title="2014-01-12 19:16:38Z" class="relativetime-clean">Jan 12 '14 at 19:16</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-4804581" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#" onclick=""></a>
+        </div>         
+    </td>
+</tr>        </tbody></table>
+</div>
+
+			<div id="answers">
+
+				<a name="tab-top"></a>
+				<div id="answers-header">
+					<div class="subheader answers-subheader">
+						<h2>
+								9 Answers
+                                <span style="display:none;" itemprop="answerCount">9</span>
+						</h2>
+						<div>
+							<div id="tabs">
+        <a href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height?answertab=active#tab-top" data-nav-xhref="" title="Answers with the latest activity first" data-value="active">active</a>
+        <a href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height?answertab=oldest#tab-top" data-nav-xhref="" title="Answers in the order they were provided" data-value="oldest">oldest</a>
+        <a class="youarehere" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height?answertab=votes#tab-top" data-nav-xhref="" title="Answers with the highest score first" data-value="votes">votes</a>
+</div>
+						</div>
+					</div>    
+				</div>    
+
+
+
+
+  
+<a name="4804706"></a>
+<div id="answer-4804706" class="answer accepted-answer" data-answerid="4804706" itemscope="" itemtype="http://schema.org/Answer" itemprop="acceptedAnswer">
+
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="4804706">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">195</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+        <span class="vote-accepted-on load-accepted-answer-date" title="The question owner accepted this as the best answer Jan 27 &#39;11 at 7:33.">accepted</span>
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>for the parent element add the following properties </p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pun">.</span><span class="pln">parent </span><span class="pun">{</span><span class="pln">
+    overflow</span><span class="pun">:</span><span class="pln"> hidden</span><span class="pun">;</span><span class="pln">
+    position</span><span class="pun">:</span><span class="pln"> relative</span><span class="pun">;</span><span class="pln">
+    width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100</span><span class="pun">%;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+<p>then for <code>.child-right</code> these: </p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pun">.</span><span class="pln">child</span><span class="pun">-</span><span class="pln">right </span><span class="pun">{</span><span class="pln">
+    background</span><span class="pun">:</span><span class="pln">green</span><span class="pun">;</span><span class="pln">
+    height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100</span><span class="pun">%;</span><span class="pln">
+    width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">50</span><span class="pun">%;</span><span class="pln">
+    position</span><span class="pun">:</span><span class="pln"> absolute</span><span class="pun">;</span><span class="pln">
+    right</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+    top</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+<p>A more detailed results using some extra CSS you can find here: <a href="http://jsbin.com/nimeguxuda/1/edit?html,css,output">http://jsbin.com/nimeguxuda/1/edit?html,css,output</a></p>
+
+<p>You can find more information about equal height colums at  <a href="http://matthewjamestaylor.com/blog/equal-height-columns-cross-browser-css-no-hacks">http://matthewjamestaylor.com/blog/equal-height-columns-cross-browser-css-no-hacks</a></p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/4804706" title="short permalink to this answer" class="short-link" id="link-post-4804706">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/4804706/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/4804706/revisions" title="show all edits to this post">edited <span title="2015-04-14 22:46:49Z" class="relativetime">Apr 14 at 22:46</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        <br>
+        
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2011-01-26 12:44:38Z" class="relativetime">Jan 26 '11 at 12:44</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/407382/sotiris"><div class="gravatar-wrapper-32"><img src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/762dbe1d3829c31b1d4bdafe19440406" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/407382/sotiris">Sotiris</a><br>
+        <span class="reputation-score" title="reputation score 19624" dir="ltr">19.6k</span><span title="7 gold badges"><span class="badge1"></span><span class="badgecount">7</span></span><span title="30 silver badges"><span class="badge2"></span><span class="badgecount">30</span></span><span title="67 bronze badges"><span class="badge3"></span><span class="badgecount">67</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-4804706" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="5" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-5325931" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Your CSS results in undefined behavior - the parent's height depends on the childrens height, but the children have a percentage height defined in terms of the parent: this is invalid, and will likely not work in a cross-browser way.</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/42921/eamon-nerbonne" title="25160 reputation" class="comment-user">Eamon Nerbonne</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment5325931_4804706"><span title="2011-01-26 14:03:16Z" class="relativetime-clean">Jan 26 '11 at 14:03</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-5325990" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I see you're not floating everything - so that's defined at the cost of not scaling if ever the right column grows longer than the left (which indeed is not the case in the OP's question).</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/42921/eamon-nerbonne" title="25160 reputation" class="comment-user">Eamon Nerbonne</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment5325990_4804706"><span title="2011-01-26 14:08:13Z" class="relativetime-clean">Jan 26 '11 at 14:08</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-5326016" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Yes, you need to add this:  padding-bottom: 32768px; margin-bottom: -32768px; to the children.</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/577792/michael" title="1059 reputation" class="comment-user">Michael</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment5326016_4804706"><span title="2011-01-26 14:09:59Z" class="relativetime-clean">Jan 26 '11 at 14:09</span></a></span>
+                    <span class="edited-yes" title="this comment was edited 4 times"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-14076291" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">This works as long as the right column is guaranteed to have fewer content then the left or else it will be clipped. Also I edited the answer to omit the useless declarations.</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/1047823/christoph" title="26490 reputation" class="comment-user">Christoph</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment14076291_4804706"><span title="2012-05-30 11:50:34Z" class="relativetime-clean">May 30 '12 at 11:50</span></a></span>
+                    <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-20894648" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@MatthewBlackford: it's a "hack" in that it prevent margin collapsing.  You could prevent margin collapsing in other ways, such as using a 1px transparent border, but in essence, but the important thing here is that you avoid margin collapse.  I wouldn't use this solution except as a last resort since it causes weird layout errors and unexpected cropping (or superimposed content) when your assumptions turn out to be faulty.  In short: you don't want to do this unless you <i>really</i> need to.</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/42921/eamon-nerbonne" title="25160 reputation" class="comment-user">Eamon Nerbonne</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment20894648_4804706"><span title="2013-02-15 15:32:47Z" class="relativetime-clean">Feb 15 '13 at 15:32</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-4804706" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link  dno" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#" onclick="">show <b>5</b> more comments</a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+<div class="everyonelovesstackoverflow" id="careers3"><a href="http://careers.stackoverflow.com/" rel="nofollow" target="_blank"><img src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/companypageadfallback-leaderboard-3.png"></a></div>
+  
+<a name="4805371"></a>
+<div id="answer-4805371" class="answer" data-answerid="4805371" itemscope="" itemtype="http://schema.org/Answer">
+
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="4805371">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">65</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>A common solution to this problem uses absolute positioning or cropped floats, but these are tricky in that they require extensive tuning if your columns change in number+size, and that you need to make sure your "main" column is always the longest.  Instead, I'd suggest you use one of three more robust solutions:</p>
+
+<ol>
+<li><code>table</code> or <code>display: table</code>:  very simple, very compatible (pretty much every browser ever), quite flexible.</li>
+<li><code>display: inline-block; width:50%</code> with a negative margin hack: quite simple, but column-bottom borders are a little tricky.</li>
+<li><code>display: flex</code>: by far the simplest solution and very flexible but unsupported by IE9 and older.</li>
+</ol>
+
+<h2>1.<code>&lt;table&gt;</code> or <code>display: table</code></h2>
+
+<p>The simplest, most compatible way to do this is to use a <code>table</code> - <strong>I'd recommend you try that first</strong>.  You're dealing with columns; divs + floats simply aren't the best way to do that (not to mention the fact that multiple levels of nested divs just to hack around css limitations is hardly more "semantic" than just using a simple table).  If you do not wish to use the <code>table</code> element, <strong>consider css <code>display: table</code></strong> (unsupported by IE7 and older).  </p>
+
+<p>Example: <a href="http://jsfiddle.net/emn13/7FFp3/">http://jsfiddle.net/emn13/7FFp3/</a>
+Relevant css:</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pun">.</span><span class="pln">parent </span><span class="pun">{</span><span class="pln"> display</span><span class="pun">:</span><span class="pln"> table</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">parent </span><span class="pun">&gt;</span><span class="pln"> div </span><span class="pun">{</span><span class="pln">display</span><span class="pun">:</span><span class="pln"> table</span><span class="pun">-</span><span class="pln">cell</span><span class="pun">;</span><span class="pln"> width</span><span class="pun">:</span><span class="lit">50</span><span class="pun">%;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="com">/*omit width:50% for auto-scaled column widths*/</span></code></pre>
+
+<p>This approach is far more robust than using <code>overflow:hidden</code> with floats.  You can add pretty much any number of columns; you can have them <em>auto-scale</em> if you want; and you retain compatibility with ancient browsers.  Unlike the float solution requires, you also don't need to know <em>beforehand</em> which column is longest; the height scales just fine.</p>
+
+<p><strong>KISS:</strong> don't use float hacks unless you specifically need to.  If IE7 is an issue, I'd still pick a plain table with semantic columns over a hard-to-maintain, less flexible trick-CSS solution any day.</p>
+
+<p>By the way, if you need your layout to be responsive (e.g. no columns on small mobile phones) you can use a <code>@media</code> query to fall back to plain block layout for small screen widths - this works whether you use <code>&lt;table&gt;</code> or any other <code>display: table</code> element.</p>
+
+<h2>2. <code>display:inline block</code> with a negative margin hack.</h2>
+
+<p>Another alternative is to use <code>display:inline block</code>; for example: <a href="http://jsbin.com/ovuqes/2/edit">http://jsbin.com/ovuqes/2/edit</a></p>
+
+<p>Relevant html: (the absence of spaces between the <code>div</code> tags is significant!)</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"parent"</span><span class="tag">&gt;&lt;div&gt;&lt;div&gt;</span><span class="pln">column 1</span><span class="tag">&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;</span><span class="pln">column 2</span><span class="tag">&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</span></code></pre>
+
+<p>Relevant css:</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pun">.</span><span class="pln">parent </span><span class="pun">{</span><span class="pln"> 
+    position</span><span class="pun">:</span><span class="pln"> relative</span><span class="pun">;</span><span class="pln"> width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100</span><span class="pun">%;</span><span class="pln"> white</span><span class="pun">-</span><span class="pln">space</span><span class="pun">:</span><span class="pln"> nowrap</span><span class="pun">;</span><span class="pln"> overflow</span><span class="pun">:</span><span class="pln"> hidden</span><span class="pun">;</span><span class="pln"> 
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">.</span><span class="pln">parent</span><span class="pun">&gt;</span><span class="pln">div </span><span class="pun">{</span><span class="pln"> 
+    display</span><span class="pun">:</span><span class="kwd">inline</span><span class="pun">-</span><span class="pln">block</span><span class="pun">;</span><span class="pln"> width</span><span class="pun">:</span><span class="lit">50</span><span class="pun">%;</span><span class="pln"> white</span><span class="pun">-</span><span class="pln">space</span><span class="pun">:</span><span class="pln">normal</span><span class="pun">;</span><span class="pln"> vertical</span><span class="pun">-</span><span class="pln">align</span><span class="pun">:</span><span class="pln">top</span><span class="pun">;</span><span class="pln"> 
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">.</span><span class="pln">parent</span><span class="pun">&gt;</span><span class="pln">div</span><span class="pun">&gt;</span><span class="pln">div </span><span class="pun">{</span><span class="pln">
+    padding</span><span class="pun">-</span><span class="pln">bottom</span><span class="pun">:</span><span class="pln"> </span><span class="lit">32768px</span><span class="pun">;</span><span class="pln"> margin</span><span class="pun">-</span><span class="pln">bottom</span><span class="pun">:</span><span class="pln"> </span><span class="pun">-</span><span class="lit">32768px</span><span class="pun">;</span><span class="pln"> 
+</span><span class="pun">}</span></code></pre>
+
+<p>This is slightly tricky, and the negative margin means that the "true" bottom of the columns is obscured.  This in turn means you can't position anything relative to the bottom of those columns because that's cut off by <code>overflow: hidden</code>.</p>
+
+<h2>3. <code>display:flex</code></h2>
+
+<p>This is really simple - but only supported by IE10 or later (in addition to other modern browsers).</p>
+
+<p>Relevant html: <code>&lt;div class="parent"&gt;&lt;div&gt;column 1&lt;/div&gt;&lt;/div&gt;&lt;div&gt;column 2&lt;/div&gt;&lt;/div&gt;</code></p>
+
+<p>Relevant css: </p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pun">.</span><span class="pln">parent </span><span class="pun">{</span><span class="pln"> display</span><span class="pun">:</span><span class="pln"> </span><span class="pun">-</span><span class="pln">ms</span><span class="pun">-</span><span class="pln">flex</span><span class="pun">;</span><span class="pln"> display</span><span class="pun">:</span><span class="pln"> </span><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">flex</span><span class="pun">;</span><span class="pln"> display</span><span class="pun">:</span><span class="pln"> flex</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">parent</span><span class="pun">&gt;</span><span class="pln">div </span><span class="pun">{</span><span class="pln"> flex</span><span class="pun">:</span><span class="lit">1</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span></code></pre>
+
+<p>Flexbox has support for a lot more options, but to simply have any number of columns the above suffices!</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/4805371" title="short permalink to this answer" class="short-link" id="link-post-4805371">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/4805371/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/4805371/revisions" title="show all edits to this post">edited <span title="2015-03-26 12:59:07Z" class="relativetime">Mar 26 at 12:59</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        <br>
+        
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2011-01-26 14:01:44Z" class="relativetime">Jan 26 '11 at 14:01</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/42921/eamon-nerbonne"><div class="gravatar-wrapper-32"><img src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/f01c56bb1f952ea101e77a799f9f9335" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/42921/eamon-nerbonne">Eamon Nerbonne</a><br>
+        <span class="reputation-score" title="reputation score 25160" dir="ltr">25.2k</span><span title="7 gold badges"><span class="badge1"></span><span class="badgecount">7</span></span><span title="59 silver badges"><span class="badge2"></span><span class="badgecount">59</span></span><span title="116 bronze badges"><span class="badge3"></span><span class="badgecount">116</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-4805371" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="5" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-18359858" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Good one, but it's worth to note that you're unable to use margins between these cells (and padding won't help if you want them styled).</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/683068/wordpressor" title="886 reputation" class="comment-user">Wordpressor</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment18359858_4805371"><span title="2012-11-17 15:06:24Z" class="relativetime-clean">Nov 17 '12 at 15:06</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-18437759" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy"><code>border-spacing:10px;</code> on the table element will introduce margin-like spacing.  Alternatively, you could add extra (empty) columns where you want extra space.  And you could also add padding inside the table-cells; that padding will be included in the background however, so that may not be what you want.  But you're right that it's not quite as flexible as a normal margin.  And you can't position anything relative to the columns, which may be a problem.</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/42921/eamon-nerbonne" title="25160 reputation" class="comment-user">Eamon Nerbonne</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment18437759_4805371"><span title="2012-11-20 16:03:50Z" class="relativetime-clean">Nov 20 '12 at 16:03</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-18449855" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">So it's better a table-less layout or not ?</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/496223/dynamic" title="22032 reputation" class="comment-user">dynamic</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment18449855_4805371"><span title="2012-11-20 23:25:22Z" class="relativetime-clean">Nov 20 '12 at 23:25</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-18463173" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I have to say: I agree to you that in this case a simple table is more than enough. The problem is that there is a common view to disregard every layout with table</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/496223/dynamic" title="22032 reputation" class="comment-user">dynamic</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment18463173_4805371"><span title="2012-11-21 11:38:51Z" class="relativetime-clean">Nov 21 '12 at 11:38</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-32580109" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">The problem with table is that when the screen is resized to a smaller width (responsive design) the table cells get squished instead of tiling one over the top of the next one. The second method with padding-bottom: 32768px; margin-bottom: -32768px; is quite amazing and does almost exactly what I needed...thanks for that one...border bottom is an issue though...</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/550975/serj-sagan" title="4851 reputation" class="comment-user">Serj Sagan</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment32580109_4805371"><span title="2014-02-05 05:51:04Z" class="relativetime-clean">Feb 5 '14 at 5:51</span></a></span>
+                    <span class="edited-yes" title="this comment was edited 2 times"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-4805371" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link  dno" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#" onclick="">show <b>5</b> more comments</a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="14952938"></a>
+<div id="answer-14952938" class="answer" data-answerid="14952938" itemscope="" itemtype="http://schema.org/Answer">
+
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="14952938">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">12</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I found a lot of answers, but probably the best solution for me is </p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pun">.</span><span class="pln">parent </span><span class="pun">{</span><span class="pln"> 
+  overflow</span><span class="pun">:</span><span class="pln"> hidden</span><span class="pun">;</span><span class="pln"> 
+</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">parent </span><span class="pun">.</span><span class="pln">floatLeft </span><span class="pun">{</span><span class="pln">
+  </span><span class="com"># your other styles</span><span class="pln">
+  </span><span class="kwd">float</span><span class="pun">:</span><span class="pln"> left</span><span class="pun">;</span><span class="pln">
+  margin</span><span class="pun">-</span><span class="pln">bottom</span><span class="pun">:</span><span class="pln"> </span><span class="pun">-</span><span class="lit">99999px</span><span class="pun">;</span><span class="pln">
+  padding</span><span class="pun">-</span><span class="pln">bottom</span><span class="pun">:</span><span class="pln"> </span><span class="lit">99999px</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+<p>You can check other solutions here <a href="http://css-tricks.com/fluid-width-equal-height-columns/">http://css-tricks.com/fluid-width-equal-height-columns/</a></p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/14952938" title="short permalink to this answer" class="short-link" id="link-post-14952938">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/14952938/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2013-02-19 08:26:41Z" class="relativetime">Feb 19 '13 at 8:26</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/1056160/dobromir-minchev"><div class="gravatar-wrapper-32"><img src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/Oy296.jpg" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/1056160/dobromir-minchev">Dobromir Minchev</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">213</span><span title="4 silver badges"><span class="badge2"></span><span class="badgecount">4</span></span><span title="8 bronze badges"><span class="badge3"></span><span class="badgecount">8</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-14952938" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-14952938" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="13190204"></a>
+<div id="answer-13190204" class="answer" data-answerid="13190204" itemscope="" itemtype="http://schema.org/Answer">
+
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="13190204">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">8</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Please set parent div to <code>overflow: hidden</code><br>
+then in child divs you can set a large amount for padding-bottom. for example<br>
+<code>padding-bottom: 5000px</code><br>
+then <code>margin-bottom: -5000px</code><br>
+and then all child divs will be the height of the parent.<br>
+Of course this wont work if you are trying to put content in the parent div (outside of other divs that is)  </p>
+
+<p></p><div class="snippet" data-lang="js" data-hide="false">
+<div class="snippet-code">
+<pre class="snippet-code-css lang-css prettyprint prettyprinted"><code><span class="pun">.</span><span class="pln">parent</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">border</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1px</span><span class="pln"> solid black</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">overflow</span><span class="pun">:</span><span class="pln"> hidden</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">height</span><span class="pun">:</span><span class="pln"> auto</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">child</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">float</span><span class="pun">:</span><span class="pln"> left</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">padding-bottom</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1500px</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">margin-bottom</span><span class="pun">:</span><span class="pln"> </span><span class="pun">-</span><span class="lit">1500px</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">child1</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">background</span><span class="pun">:</span><span class="pln"> red</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">padding-right</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10px</span><span class="pun">;</span><span class="pln">    
+</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">child2</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">background</span><span class="pun">:</span><span class="pln"> green</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">padding-left</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10px</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<pre class="snippet-code-html lang-html prettyprint prettyprinted"><code><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"parent"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"child1 child"</span><span class="tag">&gt;</span><span class="pln">
+        One line text in child1
+    </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"child2 child"</span><span class="tag">&gt;</span><span class="pln">
+        Three line text in child2</span><span class="tag">&lt;br</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+        Three line text in child2</span><span class="tag">&lt;br</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+        Three line text in child2
+    </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span></code></pre>
+<div class="snippet-result" style="width: 100%; border: 1px solid #AAAAAA;"><div style="width: 100%; margin: 0px 5px;"><input type="button" value="► Run code snippet" style="margin: 1em 0 1em 0.5em; float: none;"><input class="copySnippet" type="button" value="Copy snippet to answer" style="margin: 1em 0px 1em 0.5em; float: none; display: none;"><input class="hideResults" type="button" value="Hide results" style="margin: 1em 0px 1em 0.5em; float: none; display: none;"></div><div style="position: relative; width: 100%; height: 200px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(170, 170, 170); display: none;"><iframe name="e7b10050-421e-9cfa-e19c-c43797b356e5" sandbox="allow-scripts" class="snippet-box-edit" frameborder="0"></iframe></div></div></div>
+</div>
+  <p></p>
+
+<p>Example: <a href="http://jsfiddle.net/Tareqdhk/DAFEC/" rel="nofollow">http://jsfiddle.net/Tareqdhk/DAFEC/</a></p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/13190204" title="short permalink to this answer" class="short-link" id="link-post-13190204">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/13190204/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/13190204/revisions" title="show all edits to this post">edited <span title="2015-03-03 02:42:21Z" class="relativetime">Mar 3 at 2:42</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        <br>
+        
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2012-11-02 06:10:20Z" class="relativetime">Nov 2 '12 at 6:10</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/169497/tareq"><div class="gravatar-wrapper-32"><img src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/bb545927e90ed6abb3a3177c1cedc495" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/169497/tareq">Tareq</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">1,213</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="15 silver badges"><span class="badge2"></span><span class="badgecount">15</span></span><span title="50 bronze badges"><span class="badge3"></span><span class="badgecount">50</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-13190204" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-20266129" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">seems a bit dirty, but worked for me - the only solution on this question. I tried this using twitter bootstrap.</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/480403/cukabeka" title="142 reputation" class="comment-user">cukabeka</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment20266129_13190204"><span title="2013-01-26 00:16:21Z" class="relativetime-clean">Jan 26 '13 at 0:16</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-32580255" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">works, but border bottom needs creative approach...</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/550975/serj-sagan" title="4851 reputation" class="comment-user">Serj Sagan</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment32580255_13190204"><span title="2014-02-05 05:57:23Z" class="relativetime-clean">Feb 5 '14 at 5:57</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-13190204" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="4804640"></a>
+<div id="answer-4804640" class="answer" data-answerid="4804640" itemscope="" itemtype="http://schema.org/Answer">
+
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="4804640">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">6</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Does the parent have a height? If you set the parents height like so.</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pln">div</span><span class="pun">.</span><span class="pln">parent </span><span class="pun">{</span><span class="pln"> height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">300px</span><span class="pln"> </span><span class="pun">};</span></code></pre>
+
+<p>Then you can make the child stretch to the full height like this.</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pln">div</span><span class="pun">.</span><span class="pln">child</span><span class="pun">-</span><span class="pln">right </span><span class="pun">{</span><span class="pln"> height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100</span><span class="pun">%</span><span class="pln"> </span><span class="pun">};</span></code></pre>
+
+<p><strong>EDIT</strong></p>
+
+<p><a href="http://jsfiddle.net/Wolfy87/czLnf/1/">Here is how you would do it using JavaScript.</a></p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/4804640" title="short permalink to this answer" class="short-link" id="link-post-4804640">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/4804640/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/4804640/revisions" title="show all edits to this post">edited <span title="2011-01-26 12:47:53Z" class="relativetime">Jan 26 '11 at 12:47</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        <br>
+        
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2011-01-26 12:37:57Z" class="relativetime">Jan 26 '11 at 12:37</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/455137/olical"><div class="gravatar-wrapper-32"><img src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/5a44318c7cda1f09fbee6c0c1d54e4bf" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/455137/olical">Olical</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">6,481</span><span title="5 gold badges"><span class="badge1"></span><span class="badgecount">5</span></span><span title="35 silver badges"><span class="badge2"></span><span class="badgecount">35</span></span><span title="59 bronze badges"><span class="badge3"></span><span class="badgecount">59</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-4804640" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-5324909" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">parent does not have a fixed height. It is expanding as per the child-left height.</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/42372/veera" title="7266 reputation" class="comment-user owner">Veera</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment5324909_4804640"><span title="2011-01-26 12:40:17Z" class="relativetime-clean">Jan 26 '11 at 12:40</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-5324925" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Ah, I thought as much, then you are going to need some JavaScript, I will append it in a second.</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/455137/olical" title="6481 reputation" class="comment-user">Olical</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment5324925_4804640"><span title="2011-01-26 12:41:04Z" class="relativetime-clean">Jan 26 '11 at 12:41</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-4804640" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="23300393"></a>
+<div id="answer-23300393" class="answer" data-answerid="23300393" itemscope="" itemtype="http://schema.org/Answer">
+
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="23300393">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">4</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>For the parent:</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pln">display</span><span class="pun">:</span><span class="pln"> flex</span><span class="pun">;</span></code></pre>
+
+<p>For childs:</p>
+
+<pre class="default prettyprint prettyprinted"><code><span class="pln">align</span><span class="pun">-</span><span class="pln">items</span><span class="pun">:</span><span class="pln"> stretch</span><span class="pun">;</span></code></pre>
+
+<p>You should add some prefixes, check caniuse.</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/23300393" title="short permalink to this answer" class="short-link" id="link-post-23300393">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/23300393/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-04-25 18:25:49Z" class="relativetime">Apr 25 '14 at 18:25</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/2261550/aiphee"><div class="gravatar-wrapper-32"><img src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/VwiMb.png" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/2261550/aiphee">Aiphee</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">681</span><span title="5 silver badges"><span class="badge2"></span><span class="badgecount">5</span></span><span title="12 bronze badges"><span class="badge3"></span><span class="badgecount">12</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-23300393" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-41440939" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">This works for me. Thanks, here's an upvote for you.</span>
+                –&nbsp;
+		            <span class="comment-user">user2481398</span>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment41440939_23300393"><span title="2014-10-16 00:28:14Z" class="relativetime-clean">Oct 16 '14 at 0:28</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-45273125" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Wouldn't recommend. IE9 is still a thing.</span>
+                –&nbsp;
+		            <span class="comment-user">user1537415</span>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment45273125_23300393"><span title="2015-02-12 10:19:48Z" class="relativetime-clean">Feb 12 at 10:19</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-23300393" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="4804678"></a>
+<div id="answer-4804678" class="answer" data-answerid="4804678" itemscope="" itemtype="http://schema.org/Answer">
+
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="4804678">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">3</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I have recently done this on my website using jQuery.  The code calculates the height of the tallest div and sets the other divs to the same height.  Here's the technique:</p>
+
+<p><a href="http://www.broken-links.com/2009/01/20/very-quick-equal-height-columns-in-jquery/" rel="nofollow">http://www.broken-links.com/2009/01/20/very-quick-equal-height-columns-in-jquery/</a></p>
+
+<p>I don't believe <code>height:100%</code> will work, so if you don't explicitly know the div heights I don't think there is a pure CSS solution.</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/4804678" title="short permalink to this answer" class="short-link" id="link-post-4804678">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/4804678/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2011-01-26 12:41:26Z" class="relativetime">Jan 26 '11 at 12:41</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/310174/ajcw"><div class="gravatar-wrapper-32"><img src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/4756bd54397d649cf8f314c8d5b39930" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/310174/ajcw">ajcw</a><br>
+        <span class="reputation-score" title="reputation score 10446" dir="ltr">10.4k</span><span title="4 gold badges"><span class="badge1"></span><span class="badgecount">4</span></span><span title="19 silver badges"><span class="badge2"></span><span class="badgecount">19</span></span><span title="39 bronze badges"><span class="badge3"></span><span class="badgecount">39</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-4804678" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-50906677" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">You should trigger this at least on ready, resize, orientation change, font resize.</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/589531/netaction" title="581 reputation" class="comment-user">netAction</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment50906677_4804678"><span title="2015-07-17 07:30:03Z" class="relativetime-clean">Jul 17 at 7:30</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-4804678" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="23929146"></a>
+<div id="answer-23929146" class="answer" data-answerid="23929146" itemscope="" itemtype="http://schema.org/Answer">
+
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="23929146">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">3</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I used this for a comment section:</p>
+
+<p></p><div class="snippet" data-lang="js" data-hide="false">
+<div class="snippet-code">
+<pre class="snippet-code-css lang-css prettyprint prettyprinted"><code><span class="pun">.</span><span class="pln">parent </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">display</span><span class="pun">:</span><span class="pln"> flex</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">float</span><span class="pun">:</span><span class="pln"> left</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">border-top</span><span class="pun">:</span><span class="lit">2px</span><span class="pln"> solid black</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">width</span><span class="pun">:</span><span class="lit">635px</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">margin</span><span class="pun">:</span><span class="lit">10px</span><span class="pln"> </span><span class="lit">0px</span><span class="pln"> </span><span class="lit">0px</span><span class="pln"> </span><span class="lit">0px</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">padding</span><span class="pun">:</span><span class="lit">0px</span><span class="pln"> </span><span class="lit">20px</span><span class="pln"> </span><span class="lit">0px</span><span class="pln"> </span><span class="lit">20px</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">background-color</span><span class="pun">:</span><span class="pln"> rgba</span><span class="pun">(</span><span class="lit">255</span><span class="pun">,</span><span class="lit">255</span><span class="pun">,</span><span class="lit">255</span><span class="pun">,</span><span class="lit">0.5</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+    
+</span><span class="pun">.</span><span class="pln">child-left </span><span class="pun">{</span><span class="pln">
+	</span><span class="kwd">align-items</span><span class="pun">:</span><span class="pln"> stretch</span><span class="pun">;</span><span class="pln">
+	</span><span class="kwd">float</span><span class="pun">:</span><span class="pln"> left</span><span class="pun">;</span><span class="pln">
+	</span><span class="kwd">width</span><span class="pun">:</span><span class="lit">135px</span><span class="pun">;</span><span class="pln">
+	</span><span class="kwd">padding</span><span class="pun">:</span><span class="lit">10px</span><span class="pln"> </span><span class="lit">10px</span><span class="pln"> </span><span class="lit">10px</span><span class="pln"> </span><span class="lit">0px</span><span class="pun">;</span><span class="pln">
+	</span><span class="kwd">height</span><span class="pun">:</span><span class="kwd">inherit</span><span class="pun">;</span><span class="pln">
+	</span><span class="kwd">border-right</span><span class="pun">:</span><span class="lit">2px</span><span class="pln"> solid black</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">.</span><span class="pln">child-right </span><span class="pun">{</span><span class="pln">
+	</span><span class="kwd">align-items</span><span class="pun">:</span><span class="pln"> stretch</span><span class="pun">;</span><span class="pln">
+	</span><span class="kwd">float</span><span class="pun">:</span><span class="pln"> left</span><span class="pun">;</span><span class="pln">
+	</span><span class="kwd">width</span><span class="pun">:</span><span class="lit">468px</span><span class="pun">;</span><span class="pln">
+	</span><span class="kwd">padding</span><span class="pun">:</span><span class="lit">10px</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<pre class="snippet-code-html lang-html prettyprint prettyprinted"><code><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"parent"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"child-left"</span><span class="tag">&gt;</span><span class="pln">Short</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"child-right"</span><span class="tag">&gt;</span><span class="pln">Tall</span><span class="tag">&lt;br&gt;</span><span class="pln">Tall</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span></code></pre>
+<div class="snippet-result" style="width: 100%; border: 1px solid #AAAAAA;"><div style="width: 100%; margin: 0px 5px;"><input type="button" value="► Run code snippet" style="margin: 1em 0 1em 0.5em; float: none;"><input class="copySnippet" type="button" value="Copy snippet to answer" style="margin: 1em 0px 1em 0.5em; float: none; display: none;"><input class="hideResults" type="button" value="Hide results" style="margin: 1em 0px 1em 0.5em; float: none; display: none;"></div><div style="position: relative; width: 100%; height: 200px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(170, 170, 170); display: none;"><iframe name="1e225684-4d02-baa9-7fcd-2b706d49f751" sandbox="allow-scripts" class="snippet-box-edit" frameborder="0"></iframe></div></div></div>
+</div>
+<p></p>
+
+<p>You could float the child-right to the right, but in this case I've calculated the widths of each div precisely.</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/23929146" title="short permalink to this answer" class="short-link" id="link-post-23929146">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/23929146/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/23929146/revisions" title="show all edits to this post">edited <span title="2015-03-03 03:33:35Z" class="relativetime">Mar 3 at 3:33</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/169497/tareq"><div class="gravatar-wrapper-32"><img src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/bb545927e90ed6abb3a3177c1cedc495" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/169497/tareq">Tareq</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">1,213</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="15 silver badges"><span class="badge2"></span><span class="badgecount">15</span></span><span title="50 bronze badges"><span class="badge3"></span><span class="badgecount">50</span></span>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-05-29 08:39:47Z" class="relativetime">May 29 '14 at 8:39</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/3686771/larsgrafik"><div class="gravatar-wrapper-32"><img src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/picture" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/3686771/larsgrafik">larsgrafik</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">31</span><span title="3 bronze badges"><span class="badge3"></span><span class="badgecount">3</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-23929146" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-39067800" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">first thing that came  to my mind was height:inherit not sure why nobody upvoted</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/1304536/andreas" title="168 reputation" class="comment-user">Andreas</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment39067800_23929146"><span title="2014-08-03 13:38:07Z" class="relativetime-clean">Aug 3 '14 at 13:38</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-23929146" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="4804881"></a>
+<div id="answer-4804881" class="answer" data-answerid="4804881" itemscope="" itemtype="http://schema.org/Answer">
+
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="4804881">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">2</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>CSS table display is ideal for this:</p>
+
+<p></p><div class="snippet" data-lang="js" data-hide="false">
+<div class="snippet-code">
+<pre class="snippet-code-css lang-css prettyprint prettyprinted"><code><span class="pun">.</span><span class="pln">parent </span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">display</span><span class="pun">:</span><span class="pln"> table</span><span class="pun">;</span><span class="pln">
+  </span><span class="kwd">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100%</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">parent </span><span class="pun">&gt;</span><span class="pln"> div </span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">display</span><span class="pun">:</span><span class="pln"> table-cell</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">child-left </span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">background</span><span class="pun">:</span><span class="pln"> powderblue</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">.</span><span class="pln">child-right </span><span class="pun">{</span><span class="pln">
+  </span><span class="kwd">background</span><span class="pun">:</span><span class="pln"> papayawhip</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<pre class="snippet-code-html lang-html prettyprint prettyprinted"><code><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"parent"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"child-left"</span><span class="tag">&gt;</span><span class="pln">Short</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"child-right"</span><span class="tag">&gt;</span><span class="pln">Tall</span><span class="tag">&lt;br&gt;</span><span class="pln">Tall</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span></code></pre>
+<div class="snippet-result" style="width: 100%; border: 1px solid #AAAAAA;"><div style="width: 100%; margin: 0px 5px;"><input type="button" value="► Run code snippet" style="margin: 1em 0 1em 0.5em; float: none;"><input class="copySnippet" type="button" value="Copy snippet to answer" style="margin: 1em 0px 1em 0.5em; float: none; display: none;"><input class="hideResults" type="button" value="Hide results" style="margin: 1em 0px 1em 0.5em; float: none; display: none;"></div><div style="position: relative; width: 100%; height: 200px; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(170, 170, 170); display: none;"><iframe name="88dec76e-eaeb-69d7-8503-166835489b1a" sandbox="allow-scripts" class="snippet-box-edit" frameborder="0"></iframe></div></div></div>
+</div>
+<p></p>
+
+<p>Original answer (assumed any column could be taller):</p>
+
+<p><del>You're trying to make the parent's height dependent on the children's height and children's height dependent on parent's height. Won't compute. CSS Faux columns is the best solution. There's more than one way of doing that. I'd rather not use JavaScript.</del></p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/4804881" title="short permalink to this answer" class="short-link" id="link-post-4804881">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/4804881/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/4804881/revisions" title="show all edits to this post">edited <span title="2015-03-04 04:15:03Z" class="relativetime">Mar 4 at 4:15</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        <br>
+        
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2011-01-26 13:05:58Z" class="relativetime">Jan 26 '11 at 13:05</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/87015/salman-a"><div class="gravatar-wrapper-32"><img src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/tU9c6.jpg" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/87015/salman-a">Salman A</a><br>
+        <span class="reputation-score" title="reputation score 97374" dir="ltr">97.4k</span><span title="35 gold badges"><span class="badge1"></span><span class="badgecount">35</span></span><span title="209 silver badges"><span class="badge2"></span><span class="badgecount">209</span></span><span title="293 bronze badges"><span class="badge3"></span><span class="badgecount">293</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-4804881" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-45903349" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Good point. How about if the children's height is dependent on the height of the tallest sibling (whether that be determined by the height of the parent or the not), and not the parent? I guess that can't be done in CSS.</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/620054/mikato" title="361 reputation" class="comment-user">mikato</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment45903349_4804881"><span title="2015-03-02 17:25:45Z" class="relativetime-clean">Mar 2 at 17:25</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-45904099" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">No, siblings cannot affect the height of each other. However, <code>display: table</code> + <code>display: table-cell</code> layout will produce the desired result.</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/87015/salman-a" title="97374 reputation" class="comment-user">Salman A</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment45904099_4804881"><span title="2015-03-02 17:46:17Z" class="relativetime-clean">Mar 2 at 17:46</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-45955814" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Great update! However, I ended up trying this and I wanted to have whitespace separation between the divs/cells and ended up having to make inner divs within the table-cell divs to accomplish that and then of course lost the ability to make them use the full height because the inner divs weren't table-cell divs - exact same problem. Any ideas for that? Kind of missing cell-spacing now.</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/620054/mikato" title="361 reputation" class="comment-user">mikato</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment45955814_4804881"><span title="2015-03-03 22:43:45Z" class="relativetime-clean">Mar 3 at 22:43</span></a></span>
+                    <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-45983204" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Ah, there is border-spacing in CSS! <a href="http://stackoverflow.com/questions/339923/set-cellpadding-and-cellspacing-in-css" title="set cellpadding and cellspacing in css">stackoverflow.com/questions/339923/…</a> I was able to get my table-like divs working well with whitespace separation by using border-spacing. I now have the ability to make table cells (colored background blocks) use the full height of the parent or not by clever use of the table-cell divs.</span>
+                –&nbsp;
+                    <a href="http://stackoverflow.com/users/620054/mikato" title="361 reputation" class="comment-user">mikato</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#comment45983204_4804881"><span title="2015-03-04 15:48:22Z" class="relativetime-clean">Mar 4 at 15:48</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-4804881" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+									<a name="new-answer"></a>
+						<form id="post-form" action="http://stackoverflow.com/questions/4804581/answer/submit" method="post" class="post-form">
+						    <input type="hidden" id="post-id" value="4804581">
+                            <input type="hidden" id="qualityBanWarningShown" name="qualityBanWarningShown" value="false">
+                            <input type="hidden" name="referrer" value="https://www.google.ie/">
+							<h2 class="space">Your Answer</h2>
+
+
+
+            <script>
+            StackExchange.ifUsing("editor", function () {
+                StackExchange.using("externalEditor", function () {
+                    StackExchange.using("snippets", function () {
+                        StackExchange.snippets.init();
+                    });
+                });
+            }, "code-snippets");
+        </script>
+    
+
+<script>
+    StackExchange.ready(function() {
+        initTagRenderer("".split(" "), "".split(" "));
+       
+        StackExchange.using("externalEditor", function() {
+            // Have to fire editor after snippets, if snippets enabled
+            if (StackExchange.options.snippets.enabled) {
+                StackExchange.using("snippets", function() {
+                    createEditor();
+                });
+            }
+            else {
+                createEditor();
+            }
+        });
+
+        function createEditor() {
+            prepareEditor({
+                heartbeatType: 'answer',
+                bindNavPrevention: true,
+                postfix: "",
+                    onDemand: true,
+                    discardSelector: ".discard-answer"
+                ,immediatelyShowMarkdownHelp:true
+                });
+                
+
+        }
+    });  
+</script>
+
+
+<div id="post-editor" class="post-editor js-post-editor">
+
+    <div style="position: relative;">     
+        <div class="wmd-container">
+            <div id="wmd-button-bar" class="wmd-button-bar"><ul id="wmd-button-row" class="wmd-button-row"><li id="wmd-bold-button" class="wmd-button" style="left: 0px;"><span style="background-position: 0px -20px;"></span></li><li id="wmd-italic-button" class="wmd-button" style="left: 25px;"><span style="background-position: -20px -20px;"></span></li><li id="wmd-spacer1" class="wmd-spacer" style="left: 50px;"><span style="background-position: -40px -20px;"></span></li><li id="wmd-link-button" class="wmd-button" style="left: 75px;"><span style="background-position: -40px -20px;"></span></li><li id="wmd-quote-button" class="wmd-button" style="left: 100px;"><span style="background-position: -60px -20px;"></span></li><li id="wmd-code-button" class="wmd-button" style="left: 125px;"><span style="background-position: -80px -20px;"></span></li><li id="wmd-image-button" class="wmd-button" style="left: 150px;"><span style="background-position: -100px -20px;"></span></li><li id="wmd-spacer2" class="wmd-spacer" style="left: 175px;"><span style="background-position: -120px -20px;"></span></li><li id="wmd-olist-button" class="wmd-button" style="left: 200px;"><span style="background-position: -120px -20px;"></span></li><li id="wmd-ulist-button" class="wmd-button" style="left: 225px;"><span style="background-position: -140px -20px;"></span></li><li id="wmd-heading-button" class="wmd-button" style="left: 250px;"><span style="background-position: -160px -20px;"></span></li><li id="wmd-hr-button" class="wmd-button" style="left: 275px;"><span style="background-position: -180px -20px;"></span></li><li id="wmd-spacer3" class="wmd-spacer" style="left: 300px;"><span style="background-position: -200px -20px;"></span></li><li id="wmd-undo-button" class="wmd-button" style="left: 325px;"><span style="background-position: -200px -20px;"></span></li><li id="wmd-redo-button" class="wmd-button" style="left: 350px;"><span style="background-position: -220px -20px;"></span></li></ul></div>
+            <textarea id="wmd-input" class="wmd-input" name="post-text" cols="92" rows="15" tabindex="101" data-min-length=""></textarea>
+        </div>
+    </div>
+
+    <div class="fl" style="margin-top: 8px; height:24px;">&nbsp;</div>
+    <div id="draft-saved" class="draft-saved community-option fl" style="margin-top: 8px; height:24px; display:none;">draft saved</div>
+
+    <div id="draft-discarded" class="draft-discarded community-option fl" style="margin-top: 8px; height:24px; display:none;">draft discarded</div>
+
+
+
+    <div id="wmd-preview" class="wmd-preview"></div>
+    <div></div>
+    <div class="edit-block">
+        <input id="fkey" name="fkey" type="hidden" value="32b50a839e3bdfe48ea551d1eb4e39d8">
+        <input id="author" name="author" type="text">
+    </div>
+
+
+
+</div>
+							<div style="position: relative;">
+								
+								            <div class="form-item new-post-login">
+        
+                <div class="new-login-form">
+                    <div class="new-login-left">
+                        <h3>Sign up or <a id="login-link" href="http://stackoverflow.com/users/login?ssrc=question_page&returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f4804581%2fcss-expand-child-div-height-to-parents-height%23new-answer">log in</a></h3>
+                        <script>
+                            StackExchange.ready(function () {
+                                StackExchange.helpers.onClickDraftSave('#login-link');
+                            });
+                        </script>
+                        <div class="preferred-login google-login">
+                            <p><span class="icon"></span><span>Sign up using Google</span></p>
+                        </div>
+                        <div class="preferred-login facebook-login">
+                            <p><span class="icon"></span><span>Sign up using Facebook</span></p>
+                        </div>
+                        <div class="preferred-login stackexchange-login">
+                            <p><span class="icon"></span><span>Sign up using Stack Exchange</span></p>
+                        </div>
+                    </div>
+                    <input type="hidden" name="manual-openid" class="manual-openid">
+                    <input type="hidden" name="use-facebook" class="use-facebook" value="false">
+                    <input type="hidden" name="use-google" class="use-google" value="false">
+                    <input type="button" class="submit-openid" value="Submit" style="display:none">
+                    <div class="new-login-right">
+                                <h3>Post as a guest</h3>
+    <div class="form-item">
+        <table>
+        <tbody><tr>
+                    <td class="vm">
+                <div>
+                    <label for="display-name">Name</label>
+                    <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105">
+                </div>
+                <div>
+                    <label for="m-address">Email</label>
+                    <input id="m-address" name="m-address" type="email" size="30" maxlength="100" value="" tabindex="106" placeholder="required, but never shown">
+                </div>
+            </td>
+        </tr>
+        </tbody></table>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+            <script>
+                StackExchange.ready(
+                    function () {
+                        StackExchange.openid.initPostLogin('.new-post-login', 'http%3a%2f%2fstackoverflow.com%2fquestions%2f4804581%2fcss-expand-child-div-height-to-parents-height%23new-answer', 'question_page');
+                    }
+                );
+            </script>
+            <noscript>
+                        &lt;h3&gt;Post as a guest&lt;/h3&gt;
+    &lt;div class="form-item"&gt;
+        &lt;table&gt;
+        &lt;tr&gt;
+                    &lt;td class="vm"&gt;
+                &lt;div&gt;
+                    &lt;label for="display-name"&gt;Name&lt;/label&gt;
+                    &lt;input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105"&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;label for="m-address"&gt;Email&lt;/label&gt;
+                    &lt;input id="m-address" name="m-address" type="email" size="30" maxlength="100" value="" tabindex="106" placeholder="required, but never shown" /&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+
+            </noscript>
+
+							</div>
+           
+															<div class="form-submit cbt">
+									<input id="submit-button" type="submit" value="Post Your Answer" tabindex="110">
+									<a href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height#" class="discard-answer dno">discard</a>
+
+<p class="privacy-policy-agreement">
+By posting your answer, you agree to the <a href="http://stackexchange.com/legal/privacy-policy" target="_blank">privacy policy</a> and <a href="http://stackexchange.com/legal/terms-of-service" target="_blank">terms of service</a>.</p>
+<input type="hidden" name="legalLinksShown" value="1">								</div>
+						</form>
+
+
+
+						<h2 class="bottom-notice" data-loc="1">
+Not the answer you're looking for?							Browse other questions tagged <a href="http://stackoverflow.com/questions/tagged/html" class="post-tag" title="show questions tagged &#39;html&#39;" rel="tag">html</a> <a href="http://stackoverflow.com/questions/tagged/css" class="post-tag" title="show questions tagged &#39;css&#39;" rel="tag">css</a> <a href="http://stackoverflow.com/questions/tagged/layout" class="post-tag" title="show questions tagged &#39;layout&#39;" rel="tag">layout</a>  or <a href="http://stackoverflow.com/questions/ask">ask your own question</a>.						</h2>
+			</div>
+		</div>
+				<div id="sidebar" class="show-votes">
+						    <div class="module question-stats">
+			        <table id="qinfo">
+			            <tbody><tr>
+			                <td>
+			                    <p class="label-key">asked</p>
+			                </td>
+			                <td style="padding-left: 10px">
+			                    <p class="label-key" title="2011-01-26 12:32:22Z"><b>4 years ago</b></p>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <p class="label-key">viewed</p>
+			                </td>
+
+			                <td style="padding-left: 10px">
+			                    <p class="label-key">
+			                        <b>231992 times</b>
+			                    </p>
+			                </td>
+			            </tr>
+			                <tr>
+			                    <td>
+			                        <p class="label-key">active</p>
+			                    </td>
+			                    <td style="padding-left: 10px">
+			                        <p class="label-key"><b><a href="http://stackoverflow.com/questions/4804581/css-expand-child-div-height-to-parents-height?lastactivity" class="lastactivity-link" title="2015-04-14 22:46:49Z">5 months ago</a></b></p>
+			                    </td>
+			                </tr>
+			        </tbody></table>
+			    </div>
+						
+			<div class="everyonelovesstackoverflow" id="careers2">
+        </div>
+        <div id="hireme" class=" orange looking tagged"><a href="http://careers.stackoverflow.com/jobs" target="_blank" data-hf="h" class="top"> <span>Looking for a job?</span></a><ul class="jobs"><li><a data-cid="182135" href="http://careers.stackoverflow.com/jobs/96157/experienced-software-developer-php-mysql-barclay-communications" target="_blank" title="Experienced Software Developer (PHP/MySQL &amp; Javascript) at Barclay Communications - WorkPal. Click to learn more.">Experienced Software Developer (PHP/MySQL &amp; Javascript)<br><div class="company">Barclay Communications - W…</div><div class="location" title="Belfast, UK">Belfast, UK</div><span class="post-tag">php</span><span class="post-tag">mysql</span></a></li><li><a data-cid="175073" href="http://careers.stackoverflow.com/jobs/89033/software-engineer-all-levels-workday" target="_blank" title="Software Engineer – All Levels at Workday. Click to learn more.">Software Engineer – All Levels<br><div class="company">Workday</div><div class="location" title="Dublin, Ireland">Dublin, Ireland</div><span class="post-tag">java</span><span class="post-tag">scala</span></a></li><li><a data-cid="167875" href="http://careers.stackoverflow.com/jobs/81571/teamworkchat-developer-teamworkcom" target="_blank" title="TeamworkChat Developer at Teamwork.com. Click to learn more.">TeamworkChat Developer<br><div class="company">Teamwork.com</div><div class="location" title="Cork, Ireland / remote / relocation">Cork, Ireland / remote / relocation</div><span class="post-tag">javascript</span><span class="post-tag">mysql</span></a></li><li><a data-cid="183278" href="http://careers.stackoverflow.com/jobs/97307/systems-engineer-amazon" target="_blank" title="Systems Engineer at Amazon. Click to learn more.">Systems Engineer<br><div class="company">Amazon</div><div class="location" title="Dublin, Ireland / relocation">Dublin, Ireland / relocation</div><span class="post-tag">linux</span><span class="post-tag">python</span></a></li></ul><img class="impression" src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/i.gif" style="display:none;"></div>
+			  
+    
+            <div class="module sidebar-linked">
+	<h4 id="h-linked">Linked</h4>
+	<div class="linked" data-tracker="lq=1">
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/26378731?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/26378731/make-child-div-the-same-height-as-parent-element?lq=1" class="question-hyperlink">make child div the same height as parent element</a>
+</div><div class="spacer">
+	<a href="http://stackoverflow.com/q/339923?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted extra-large">1840</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/339923/set-cellpadding-and-cellspacing-in-css?lq=1" class="question-hyperlink">Set cellpadding and cellspacing in CSS?</a>
+</div><div class="spacer">
+	<a href="http://stackoverflow.com/q/8113238?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">1</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/8113238/how-to-make-child-div-expand-to-parent-div?lq=1" class="question-hyperlink">How to make child div expand to parent div</a>
+</div><div class="spacer">
+	<a href="http://stackoverflow.com/q/26026587?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">1</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/26026587/bootstrap-100-height-right-sidebar?lq=1" class="question-hyperlink">Bootstrap 100% height RIGHT sidebar</a>
+</div><div class="spacer">
+	<a href="http://stackoverflow.com/q/13493605?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">1</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/13493605/2-columns-layout-with-same-height-table-or-div?lq=1" class="question-hyperlink">2 Columns layout with same height, table or div?</a>
+</div><div class="spacer">
+	<a href="http://stackoverflow.com/q/11817388?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">3</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/11817388/how-do-i-create-an-html-table-with-first-column-is-fixed-and-next-column-horizon?lq=1" class="question-hyperlink">How do I create an HTML table with first column is fixed and next column horizontally scrollable</a>
+</div><div class="spacer">
+	<a href="http://stackoverflow.com/q/15513557?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/15513557/divs-wont-stretch-all-the-way-down-to-the-bottom-of-the-page?lq=1" class="question-hyperlink">DIVs won't stretch all the way down to the bottom of the page?</a>
+</div><div class="spacer">
+	<a href="http://stackoverflow.com/q/31238073?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">2</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/31238073/how-to-place-a-div-to-the-height-of-its-parent-div?lq=1" class="question-hyperlink">How to place a div to the height of it's parent div</a>
+</div><div class="spacer">
+	<a href="http://stackoverflow.com/q/22955764?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/22955764/two-divs-in-a-parent-div-not-taking-100-height?lq=1" class="question-hyperlink">Two divs in a parent div not taking 100% height</a>
+</div><div class="spacer">
+	<a href="http://stackoverflow.com/q/21842156?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">3</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/21842156/how-do-i-make-these-html-blocks-of-info-stay-the-same-size?lq=1" class="question-hyperlink">How do I make these HTML blocks of info stay the same size?</a>
+</div>					<div class="spacer more">
+				<a href="http://stackoverflow.com/questions/linked/4804581?lq=1">see more linked questions…</a>
+			</div>
+	</div>
+</div>
+
+				<div class="module sidebar-related">
+					<h4 id="h-related">Related</h4>
+                    <div class="related js-gps-related-questions" data-tracker="rq=1">
+                        <div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/83073?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted large">665
+    </div>
+</a><a href="http://stackoverflow.com/questions/83073/why-not-use-tables-for-layout-in-html?rq=1" class="question-hyperlink">Why not use tables for layout in HTML?</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/90178?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted large">570
+    </div>
+</a><a href="http://stackoverflow.com/questions/90178/make-a-div-fill-the-height-of-the-remaining-screen-space?rq=1" class="question-hyperlink">Make a div fill the height of the remaining screen space</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/114543?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted extra-large">1826
+    </div>
+</a><a href="http://stackoverflow.com/questions/114543/horizontally-center-a-div-in-a-div?rq=1" class="question-hyperlink">Horizontally center a div in a div</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/384145?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted large">112
+    </div>
+</a><a href="http://stackoverflow.com/questions/384145/expand-parent-div-to-child-height?rq=1" class="question-hyperlink">Expand Parent Div To Child Height</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/1122381?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted large">171
+    </div>
+</a><a href="http://stackoverflow.com/questions/1122381/how-to-force-child-div-to-100-of-parents-div-without-specifying-parents-heigh?rq=1" class="question-hyperlink">How to Force Child Div to 100% of Parent's Div Without Specifying Parent's Height?</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/1575141?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes large">632
+    </div>
+</a><a href="http://stackoverflow.com/questions/1575141/make-div-100-height-of-browser-window?rq=1" class="question-hyperlink">Make div 100% height of browser window</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/20908135?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">1
+    </div>
+</a><a href="http://stackoverflow.com/questions/20908135/css-expand-child-to-parents-scroll-height?rq=1" class="question-hyperlink">CSS - Expand child to parent's scroll height</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/23728800?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">1
+    </div>
+</a><a href="http://stackoverflow.com/questions/23728800/expanding-div-height-in-css?rq=1" class="question-hyperlink">Expanding div height in CSS</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/25223071?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">0
+    </div>
+</a><a href="http://stackoverflow.com/questions/25223071/how-to-expand-floated-child-div-to-its-parents-height?rq=1" class="question-hyperlink">How to expand floated child div to its parent's height</a>
+</div>
+<div class="spacer js-gps-track">
+<a href="http://stackoverflow.com/q/27938839?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">0
+    </div>
+</a><a href="http://stackoverflow.com/questions/27938839/how-to-expand-child-div-height-to-parents-height?rq=1" class="question-hyperlink">how to expand child “div” height to parents height</a>
+</div>
+
+                    </div>
+				</div>
+            
+<div id="hot-network-questions" class="module">
+    <h4>
+        <a href="http://stackexchange.com/questions?tab=hot" class="js-gps-track" data-gps-track="posts_hot_network.click({ item_type:1, location:11 })">
+            Hot Network Questions
+        </a>
+    </h4>
+    <ul>
+            <li>
+                <div class="favicon favicon-serverfault" title="Server Fault"></div><a href="http://serverfault.com/questions/721223/transfer-15tb-of-tiny-files" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:2 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Transfer 15TB of tiny files
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-diy" title="Home Improvement Stack Exchange"></div><a href="http://diy.stackexchange.com/questions/74428/can-buried-gas-pipe-conduct-flame-between-two-structures" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:73 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Can buried gas pipe conduct flame between two structures?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-mathematica" title="Mathematica Stack Exchange"></div><a href="http://mathematica.stackexchange.com/questions/94506/functional-way-to-identify-summarize-repeated-elements-in-list" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:387 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    functional way to identify &amp; summarize repeated elements in List?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-mechanics" title="Motor Vehicle Maintenance &amp; Repair Stack Exchange"></div><a href="http://mechanics.stackexchange.com/questions/21033/how-to-dispose-of-engine-coolant" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:224 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to dispose of engine coolant?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/25505/oxygen-cylinders-in-medieval-world" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Oxygen cylinders in medieval world
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-stackoverflow" title="Stack Overflow"></div><a href="http://stackoverflow.com/questions/32528153/what-does-param-notnull-mean-in-c" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:1 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What does [param: NotNull] mean in C#?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/57601/z%cc%a1%cc%aca%cc%af%cc%a7%cc%94l%cc%86%cc%93g%cc%98%cc%9f%cc%9bo%cc%a1-generator" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Z̡̬a̧̯̔l̆̓g̛̘̟o̡ generator
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-cs" title="Computer Science Stack Exchange"></div><a href="http://cs.stackexchange.com/questions/47041/if-the-speed-of-electrical-charge-hasnt-changed-how-have-computers-become-fast" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:419 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    If the speed of electrical charge hasn't changed, how have computers become faster?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-programmers" title="Programmers Stack Exchange"></div><a href="http://programmers.stackexchange.com/questions/296976/advantages-of-using-dll-files-over-linking-cs-files-to-projects-for-my-own-ge" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:131 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Advantages of using .dll files over linking .cs files to projects (for my own generic helper classes / extension methods)
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-tex" title="TeX - LaTeX Stack Exchange"></div><a href="http://tex.stackexchange.com/questions/267185/how-i-use-latex-to-write-limit-equations" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:85 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How I use LaTeX to write limit equations?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/25209/would-intelligent-life-evolve-any-other-body-plan-than-humanoid" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Would intelligent life evolve any other body plan than humanoid?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-puzzling" title="Puzzling Stack Exchange"></div><a href="http://puzzling.stackexchange.com/questions/22094/encrypted-titles" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:559 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Encrypted Titles
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-unix" title="Unix &amp; Linux Stack Exchange"></div><a href="http://unix.stackexchange.com/questions/229064/how-to-tell-if-console-login-is-genuine" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:106 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to tell if console login is genuine?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-askubuntu" title="Ask Ubuntu"></div><a href="http://askubuntu.com/questions/673062/how-to-extract-an-attachment-from-an-email-header" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:89 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to extract an attachment from an email header?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-money" title="Personal Finance &amp; Money Stack Exchange"></div><a href="http://money.stackexchange.com/questions/53776/what-exactly-is-a-derivative" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:93 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What exactly is a "derivative"?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-tex" title="TeX - LaTeX Stack Exchange"></div><a href="http://tex.stackexchange.com/questions/266881/how-can-i-add-stippling-to-elements-of-my-tikz-diagrams" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:85 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How can I add stippling to elements of my tikz diagrams?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-aviation" title="Aviation Stack Exchange"></div><a href="http://aviation.stackexchange.com/questions/20870/why-some-planes-are-scrapped-way-sooner-than-others" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:528 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why some planes are scrapped way sooner than others?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/25272/what-would-it-take-to-build-a-ship-capable-of-crossing-the-pacific" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What would it take to build a ship capable of crossing the Pacific?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-blender" title="Blender Stack Exchange"></div><a href="http://blender.stackexchange.com/questions/38400/uv-unwrap-end-of-a-pipe" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:502 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    UV Unwrap End of a Pipe
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-ell" title="English Language Learners Stack Exchange"></div><a href="http://ell.stackexchange.com/questions/67809/grammatical-purpose-of-including-mind-you-between-commas" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:481 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Grammatical purpose of including "mind you" between commas
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/25427/vertical-city-why-build-it" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Vertical City - Why build it?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="http://math.stackexchange.com/questions/1430594/a%e2%88%88b-vs-a-%e2%8a%86b-for-proofs" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    A∈B vs. A ⊆B for proofs
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-aviation" title="Aviation Stack Exchange"></div><a href="http://aviation.stackexchange.com/questions/20862/which-airplanes-require-two-or-more-pilot-operators" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:528 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Which airplanes require two (or more) pilot/operators?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-scifi" title="Science Fiction &amp; Fantasy Stack Exchange"></div><a href="http://scifi.stackexchange.com/questions/102602/what-were-the-names-of-the-medals-given-out-in-star-wars-and-what-was-written-on" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:186 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What were the names of the medals given out in Star Wars and what was written on them?
+                </a>
+
+            </li>
+    </ul>
+
+        
+</div>
+		</div>
+	
+<div id="feed-link">
+    <div id="feed-link-text">
+        <a href="http://stackoverflow.com/feeds/question/4804581" title="feed of this question and its answers">
+            <span class="feed-icon"></span>question feed
+        </a>
+    </div>
+</div>	<script>
+StackExchange.ready(function(){$.get('/posts/4804581/ivc/6bc0');});
+</script>
+<noscript>
+    &lt;div&gt;&lt;img src="/posts/4804581/ivc/6bc0" class="dno" alt="" width="0" height="0"&gt;&lt;/div&gt;
+</noscript><div style="display:none" id="prettify-lang">default</div></div>
+
+
+        </div>
+    </div>
+    <div id="footer" class="categories">
+        <div class="footerwrap">
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                        <a href="http://stackoverflow.com/tour">tour</a>
+                    <a href="http://stackoverflow.com/help">help</a>
+                    <a href="http://blog.stackoverflow.com/?blb=1">blog</a>
+                        <a href="http://chat.stackoverflow.com/">chat</a>
+                    <a href="http://data.stackexchange.com/">data</a>
+                    <a href="http://stackexchange.com/legal">legal</a>
+                    <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackexchange.com/work-here">work here</a>
+                    <a href="http://stackexchange.com/mediakit">advertising info</a>
+
+                    <a onclick="StackExchange.switchMobile(&quot;on&quot;)">mobile</a>
+                    <b><a href="http://stackoverflow.com/contact">contact us</a></b>
+                        <b><a href="http://meta.stackoverflow.com/">feedback</a></b>
+                    
+                </div>
+                <div id="footer-sites">
+                    <table>
+    <tbody><tr>
+            <th colspan="3">
+                Technology
+            </th>
+            <th>
+                Life / Arts
+            </th>
+            <th>
+                Culture / Recreation
+            </th>
+            <th>
+                Science
+            </th>
+            <th>
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="http://stackoverflow.com/" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="http://serverfault.com/" title="system and network administrators">Server Fault</a></li>
+                        <li><a href="http://superuser.com/" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="http://webapps.stackexchange.com/" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="http://askubuntu.com/" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="http://webmasters.stackexchange.com/" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="http://gamedev.stackexchange.com/" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="http://tex.stackexchange.com/" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://programmers.stackexchange.com/" title="professional programmers interested in conceptual questions about software development">Programmers</a></li>
+                        <li><a href="http://unix.stackexchange.com/" title="users of Linux, FreeBSD and other Un*x-like operating systems">Unix &amp; Linux</a></li>
+                        <li><a href="http://apple.stackexchange.com/" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="http://wordpress.stackexchange.com/" title="WordPress developers and administrators">WordPress Development</a></li>
+                        <li><a href="http://gis.stackexchange.com/" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="http://electronics.stackexchange.com/" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="http://android.stackexchange.com/" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="http://security.stackexchange.com/" title="information security professionals">Information Security</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://dba.stackexchange.com/" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="http://drupal.stackexchange.com/" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="http://sharepoint.stackexchange.com/" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="http://ux.stackexchange.com/" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="http://mathematica.stackexchange.com/" title="users of Mathematica">Mathematica</a></li>
+                        <li><a href="http://salesforce.stackexchange.com/" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                        <li><a href="http://expressionengine.stackexchange.com/" title="administrators, end users, developers and designers for ExpressionEngine® CMS">ExpressionEngine® Answers</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (13)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://photo.stackexchange.com/" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="http://scifi.stackexchange.com/" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="http://graphicdesign.stackexchange.com/" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                        <li><a href="http://movies.stackexchange.com/" title="movie and tv enthusiasts">Movies &amp; TV</a></li>
+                        <li><a href="http://cooking.stackexchange.com/" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="http://diy.stackexchange.com/" title="contractors and serious DIYers">Home Improvement</a></li>
+                        <li><a href="http://money.stackexchange.com/" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                        <li><a href="http://academia.stackexchange.com/" title="academics and those enrolled in higher education">Academia</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (9)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://english.stackexchange.com/" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="http://skeptics.stackexchange.com/" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="http://judaism.stackexchange.com/" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="http://travel.stackexchange.com/" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="http://christianity.stackexchange.com/" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="http://gaming.stackexchange.com/" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                        <li><a href="http://bicycles.stackexchange.com/" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="http://rpg.stackexchange.com/" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (21)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://math.stackexchange.com/" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="http://stats.stackexchange.com/" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                        <li><a href="http://cstheory.stackexchange.com/" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="http://physics.stackexchange.com/" title="active researchers, academics and students of physics">Physics</a></li>
+                        <li><a href="http://mathoverflow.net/" title="professional mathematicians">MathOverflow</a></li>
+                        <li><a href="http://chemistry.stackexchange.com/" title="scientists, academics, teachers and students">Chemistry</a></li>
+                        <li><a href="http://biology.stackexchange.com/" title="biology researchers, academics, and students">Biology</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (5)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://stackapps.com/" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="http://meta.stackexchange.com/" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                        <li><a href="http://area51.stackexchange.com/" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="http://careers.stackoverflow.com/">Stack Overflow Careers</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</tbody></table>
+                </div>
+            </div>
+
+            <div id="copyright">
+                site design / logo © 2015 Stack Exchange Inc; user contributions licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a> 
+                with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="svnrev">
+                rev 2015.9.11.2815
+            </div>
+            
+        </div>
+    </div>
+    <noscript>
+        &lt;div id="noscript-warning"&gt;Stack Overflow works best with JavaScript enabled&lt;img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"&gt;&lt;/div&gt;
+    </noscript>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-5620270-1');
+                        ga('set', 'dimension2', '|html|css|layout|');         ga('send', 'pageview');
+        var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+        (function () {
+            var ssl='https:'==document.location.protocol,
+                s=document.getElementsByTagName('script')[0],
+                qc=document.createElement('script');
+            qc.async=true;
+            qc.src=(ssl?'https://secure':'http://edge')+'.quantserve.com/quant.js';
+            s.parentNode.insertBefore(qc, s);
+            var sc=document.createElement('script');
+            sc.async=true;
+            sc.src=(ssl?'https://sb':'http://b') + '.scorecardresearch.com/beacon.js';
+            s.parentNode.insertBefore(sc, s);
+        })();
+        _comscore.push({ c1: "2", c2: "17440561" });
+        _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+    </script>
+            
+    
+<img src="./html - CSS - Expand child DIV height to parent's height - Stack Overflow_files/i(1).gif"></body></html>
